@@ -1,0 +1,79 @@
+{% load static %}
+<html>
+
+<head>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="{% static 'jquery-3.6.0.min.js' %}" defer></script>
+    <script type="text/javascript" src="{% static 'base.js' %}" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'base.css' %}" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <img id="logo" src="{% static 'logos/cheradip.svg' %}" alt="Cheradip">
+            <ul class="sub_menu menu">
+                <li><a class="sof login" href="#home">Login</a></li>
+                <li><a class="sof logout" href="#home">Logout</a></li>
+                <li><a class="sof signup" href="#home">Signup</a></li>
+            </ul><br>
+            <ul class="main_menu menu">
+                <li><a href="#home"><img id="home" src="{% static 'logos/home_black.svg' %}"></a></li>
+                <li><a href="#home">Products</a></li>
+                <li><a class="buyer hide" href="#home">Buyer</a></li>
+                <li><a class="seller hide" href="#home">Seller</a></li>
+                <li><a class="compare hide" href="#home">Compare</a></li>
+                <li><a class="contact hide" href="#home">Contact</a></li>
+                <li><a href="#home"><img id="cart" src="{% static 'logos/cart.svg' %}"></a></li>
+            </ul>
+        </div><br><br>
+        <div class="sof">
+            <ul class="sof menu">
+                <li>
+                    <div class="search-container">
+                        <form class="search" action="/action_page.php">
+                            <input class="searchBar" type="text" placeholder="Search.." name="search">
+                            <button class="searchButton" type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+                <li class="sof sof_o"><a class="offer" href="#home">Offers</a></li>
+                <li class="sof sof_f"><a href="#home"><img id="sof_f" src="{% static 'logos/filter.svg' %}"></a></li>
+            </ul>
+        </div>
+        <div class="bars"><a href="#"><img onclick="myFunction()" id="bars" src="{% static 'logos/bars.svg' %}"></a></div>
+    </div>
+    <div class="list" id="list">
+        <ul class="list">
+            <li><a class="list" href="#home">Home</a></li>
+            <li><a class="list" href="#home">Products</a></li>
+            <li><a class="list" href="#home">Buyer</a></li>
+            <li><a class="list" href="#home">Seller</a></li>
+            <li><a class="list" href="#home">Compare</a></li>
+            <li><a class="list" href="#home">Contact</a></li>
+            <li><a class="list" href="#home">Cart</a></li>
+            <li><a class="list" href="#home">Filter</a></li>
+            <li><a class="list" href="#home">Offers</a></li>
+            <li><a class="list" href="#home">Login</a></li>
+            <li><a class="list" href="#home">Signup</a></li>
+            <li><a class="list" href="#home">Logout</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <div class="footer1">To Design and Develop any eCommerce site, please visit <a href="#developer">About Developer</a>.</div>
+        <div class="footer2">
+            <ul class="footer2">
+                <li>To Design and Develop any eCommerce site, please visit &nbsp;<u><a href="#developer"> About Developer </a></u>. </li>
+                <li>&nbsp;&nbsp; © All rights reserved by cheradip.com</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

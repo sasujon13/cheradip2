@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
+html {
+  background-color: black;
+}
+body{
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: -6px auto 0 auto;
+  padding-left: 6px;
+  max-width: 2600px;
+}
+div.header {
+  background-color: #ffffff;
+  height: 96px;
+  position: relative;
+  /* border-top-left-radius: 50px; */
+  /* border-bottom-left-radius: 50px; */
+  z-index: 2;
+}
+img.productImage{
+  height: 300px;
+  width: 300px;
+}
+td.img {
+  padding: 10px 0 10px 20px;
+}
+ul.menu {
+    float: right;
+    list-style-type: none;
+    position: absolute;
+    right: 0px;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .menu li {
+    float: left;
+  }
+a.sof {
+    font-size: 14px;
+    background-color: #eeeeee;
+    padding: 0 0 2px 20px;
+    border-radius: 0;
+}
+a.signup {
+  padding-right: 12px;
+  margin-right: 6px;;
+}
+a.login{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 0px 15px 0 15px;
+  text-decoration: none;
+  /* background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+li a:hover {
+  color: #50B848
+}
+li a:active {
+  color: #50B848
+}
+img#logo{
+    float: left;
+    height: 92px;
+    padding-top: 4px;
+  }
+  img#sof_f{
+    float: right;
+    height: 28px;
+    margin-top: -4px;
+    padding-right: 4px;
+  }
+  img#home{
+    height: 20px;
+  }
+  img#cart{
+    height: 18px;
+    margin-top: 4px;
+    padding-right: 4px;
+  }
+  img#bars{
+    opacity: 0.99;
+    height: 24px;
+    margin-left: -365px;
+    margin-top: 10px;
+    display: none;
+  }
+  div.list{
+    z-index: 1;
+    position: absolute;
+    border: 1px solid #50B848;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+  }
+  div.content{
+    position: relative;
+    z-index: 0;
+  }
+  table.products{
+    display: inline;
+    width: fit-content;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .sof {
+    z-index: 3;
+  }
+  div.footer{
+    position: relative;
+    margin: 0 0px -8px -10px;
+    font-size: 12px;
+  }
+  div.footer1{
+    height: fit-content;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 0 1px 0;
+    display: none;
+  }
+  div.footer2{
+    height: fit-content;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 4px 0 2px 0;
+  }
+  .footer2 li {
+    display: inline-flex;
+}
+.footer2 li a{
+  padding: 0;
+  background-color: #444444;
+  color: #50B848;
+}
+  ul.list {
+    margin: 0;
+}
+ul.footer2 {
+  margin: 0;
+}
+  div.list li{
+    list-style: none;
+    width: 144px;
+    margin-left: -40px;
+    border-radius: 0;
+  }
+
+  li a.list{
+    text-align: right;
+    padding: 5px;
+    border-radius: 0;
+  }
+button.searchButton {
+    background-image: url('logos/searchbar.svg');
+    background-color: transparent;
+    background-size: cover;
+    width: 21px;
+    height: 19px;
+    border: none;
+}
+input.searchBar{
+  font-family: 'Roboto', sans-serif;
+  height: 36px;
+  font-size: 20px;
+  margin-right: -32px;
+  width: 356px;
+  border-width: thin;
+  border-top: none;
+  border-left: none;
+  border-radius: 18px;
+  padding-left: 15px;
+  padding-right: 30px;
+  outline: none;
+  background-color: rgba(80, 184, 72, 0.05);
+}
+input.searchBar:hover{
+  border-width: 2px;
+}
+input.searchBar[type=text]:focus {
+  border-width: 2px;
+}
+.menu {
+  margin-top: 6px;
+}
+li.sof_o a {
+  padding-left: 52px;
+  margin-top: 6px;
+}
+li.sof_f a {
+  margin-top: 6px;
+}
+form.search{
+  margin: 0;
+}
+li a.logout{
+  display: none;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media only screen and (max-width: 798px) {
+  input.searchBar{
+    width: 45vw;
+  }
+}
+
+
+@media only screen and (max-width: 666px) {
+  li a.contact{
+    display: none;
+  }
+  li a.compare{
+    display: none;
+  }
+  img#bars{
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 459px) {
+  li a.hide{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 446px) {
+  li a.offer{
+    display: none;
+  }
+  input.searchBar{
+    width: 60vw;
+  }
+}
+
+/* test job */

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for product in products %}
+    <table class="products">
+    <tr class="products">
+        <td class="img" id="tdImg">
+            <img src="{{ product.img_url }}" class="productImage" id="productImage">
+        </td>
+        <td class="features" id="features">
+            <ul class="features" type="circle">
+                <li>{{ product.name }}</li>
+                <li>{{ product }}</li>
+                <li>{{ product.title }}</li>
+                <li>{{ product.feature }}</li>
+                <li>({{ product.stock }}){{ product.price }}0 tk</li>
+            </ul>
+        </td>
+    </tr>
+    </table>
+    {% endfor %}
+{% endblock %}
